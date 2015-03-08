@@ -20,7 +20,7 @@ chroot () {
 }
 
 chrome () {
-	sh -e crouton -t xiwi,xfce,keyboard,extension
+	sudo sh -e ~/Downloads/crouton -t xfce,keyboard,extension -n elementary 
 	sudo enter-chroot -u root sh ~/Downloads/watson.sh c
 	cd /usr/local/bin
 	sudo cp startxfce4 startelementary
